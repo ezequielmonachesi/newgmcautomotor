@@ -11,3 +11,20 @@ main{
 #gmcLogo{
     width: 250px;
 }
+
+.slidesCarrusel{
+    height: calc(100vh - 74px);
+    object-fit: cover;
+}
+@media all and (min-width: 768px) and (max-width: 991px){
+    .slidesCarrusel{
+    height: 300px;
+    object-fit: cover;
+}
+}
+@media all and (max-width: 767px){
+    .slidesCarrusel{
+    height: 300px;
+    object-fit: cover;
+}
+}

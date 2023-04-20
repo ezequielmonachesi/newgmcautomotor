@@ -32,58 +32,105 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-              <a class="navbar-brand" href="./index.html">
-                <img src="./img/gmcLogo.png" alt="gmcLogo" id="gmcLogo">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./img/gmcLogo.png" alt="gmcLogo" id="gmcLogo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sobreNosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-moon-stars-fill" id="icon-toggle"></i>
+                </span>
+                <ul class="dropdown-menu">
+                  <li>
+                    <button class="dropdown-item" id="btnThemeLight">
+                      <i class="bi bi-brightness-high-fill me-1"></i>Claro
+                    </button>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/sobreNosotros.html">Sobre nosotros</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <span
-                      class="nav-link dropdown-toggle"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="bi bi-moon-stars-fill" id="icon-toggle"></i>
-                    </span>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <button class="dropdown-item" id="btnThemeLight">
-                          <i class="bi bi-brightness-high-fill me-1"></i>Claro
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item" id="btnThemeDark">
-                          <i class="bi bi-moon-stars-fill me-1"></i>Oscuro
-                        </button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  <li>
+                    <button class="dropdown-item" id="btnThemeDark">
+                      <i class="bi bi-moon-stars-fill me-1"></i>Oscuro
+                    </button>
                   </li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div id="carruselFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/slide1.jpg" class="d-block w-100 slidesCarrusel" alt="slide1">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/slide2.jpg" class="d-block w-100 slidesCarrusel" alt="slide2">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/slide3.jpg" class="d-block w-100 slidesCarrusel" alt="slide3">
               </div>
             </div>
-          </nav>
-    </header>
-    <main></main>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </main>
     <footer class="bg-body-tertiary py-4">
-        <section class="container">
-            <p class="text-center">GMC Gestoría Monachesi Coronel | Gestoría del automotor <br>&copy; Todos los derechos reservados 2023</p>
-            <p class="text-center">Creado por: <a href="https://www.linkedin.com/in/monachesi-cesar-ezequiel/" class="text-decoration-none">Monachesi César</a></p>
-        </section>
+      <section class="container">
+        <p class="text-center">
+          GMC Gestoría Monachesi Coronel | Gestoría del automotor <br />&copy;
+          Todos los derechos reservados 2023
+        </p>
+        <p class="text-center">
+          Creado por:
+          <a
+            href="https://www.linkedin.com/in/monachesi-cesar-ezequiel/"
+            class="text-decoration-none"
+            >Monachesi César</a
+          >
+        </p>
+      </section>
     </footer>
 
     <script
