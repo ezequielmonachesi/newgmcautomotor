@@ -16,6 +16,14 @@ main{
     height: calc(100vh - 74px);
     object-fit: cover;
 }
+#beneficios{
+    background-image:linear-gradient(0deg,rgba(0,0,0,0.9),rgba(0,0,0,0.4)), url(../img/beneficio.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-attachment: fixed;
+}
 @media all and (min-width: 768px) and (max-width: 991px){
     .slidesCarrusel{
     height: 300px;
