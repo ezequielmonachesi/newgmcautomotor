@@ -13,10 +13,8 @@ function cambiarTema(color) {
     if(color === "light"){ 
       document.getElementById('icon-toggle').classList.remove('bi-moon-stars-fill');
       document.getElementById('icon-toggle').classList.add('bi-brightness-high-fill');
-      cambiarLogo.innerHTML = '<img src="./img/gmcLogo.png" alt="gmcLogo" id="gmcLogo">'
     }else{
       document.getElementById('icon-toggle').classList.remove('bi-brightness-high-fill');
       document.getElementById('icon-toggle').classList.add('bi-moon-stars-fill');
-      cambiarLogo.innerHTML = '<img src="./img/gmcLogoDark.png" alt="gmcLogo" id="gmcLogo">'
     }
 }
