@@ -10,6 +10,7 @@ body{
 }
 main{
     flex-grow: 1;
+    margin-top: 77px;
 }
 h1, h2{
     font-family: 'Raleway', sans-serif;
@@ -33,6 +34,7 @@ h1, h2{
     color: white;
     background-attachment: fixed;
 }
+
 @media all and (min-width: 768px) and (max-width: 991px){
     .slidesCarrusel{
     height: 300px;
