@@ -16,7 +16,7 @@ h1, h2{
     font-family: 'Raleway', sans-serif;
 }
 #gmcLogo{
-    width: 250px;
+    width: 60px;
 }
 
 .slidesCarrusel{
@@ -40,8 +40,15 @@ h1, h2{
     height: 300px;
     object-fit: cover;
 }
+#gmcLogo{
+    width: 50px;
+}
 }
 @media all and (max-width: 767px){
+    
+#gmcLogo{
+    width: 50px;
+}
     .slidesCarrusel{
     height: 300px;
     object-fit: cover;
