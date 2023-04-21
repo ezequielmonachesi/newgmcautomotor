@@ -3,7 +3,7 @@ let btnThemeDark = document.querySelector("#btnThemeDark");
 let cambiarLogo = document.getElementById("cambiarLogo")
 btnThemeLight.addEventListener("click", () => cambiarTema("light"));
 btnThemeDark.addEventListener("click", () => cambiarTema("dark"));
-let temaConfigurado = JSON.parse(localStorage.getItem('tema')) || 'light';
+let temaConfigurado = JSON.parse(localStorage.getItem('tema')) || 'dark';
 console.log(temaConfigurado)
 cambiarTema(temaConfigurado)
 function cambiarTema(color) {
