@@ -32,63 +32,168 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-                <a class="navbar-brand" href="../index.html">
-                  <img src="../img/gmcLogo.png" alt="gmcLogo" id="gmcLogo">
-                </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/gmcLogo.png" alt="gmcLogo" id="gmcLogo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=".sobreNosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-moon-stars-fill" id="icon-toggle"></i>
+                </span>
+                <ul class="dropdown-menu">
+                  <li>
+                    <button class="dropdown-item" id="btnThemeLight">
+                      <i class="bi bi-brightness-high-fill me-1"></i>Claro
+                    </button>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href=".sobreNosotros.html">Sobre nosotros</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <span
-                      class="nav-link dropdown-toggle"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="bi bi-moon-stars-fill" id="icon-toggle"></i>
-                    </span>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <button class="dropdown-item" id="btnThemeLight">
-                          <i class="bi bi-brightness-high-fill me-1"></i>Claro
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item" id="btnThemeDark">
-                          <i class="bi bi-moon-stars-fill me-1"></i>Oscuro
-                        </button>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  <li>
+                    <button class="dropdown-item" id="btnThemeDark">
+                      <i class="bi bi-moon-stars-fill me-1"></i>Oscuro
+                    </button>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </nav>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="container py-5">
-            <h2 class="text-center">Contacto</h2>
-            <hr>
-        </section>
+      <section class="container py-5 fondoContacto">
+        <h2 class="text-center display-5">Contacto</h2>
+        <hr />
+        <article class="row justify-content-evenly align-items-center py-md-5">
+          <aside class="col-md-6 col-lg-5 d-none d-md-block">
+            <div class="">
+              <img
+                src="../img/contacto.jpg"
+                alt="contacto"
+                class="w-100 rounded-1 alturaImagenContacto"
+              />
+            </div>
+          </aside>
+          <aside class="col-md-6 col-lg-5">
+            <h3 class="fw-semibold my-4 my-md-2 mb-lg-4">Estamos para ayudarte!</h3>
+            <p>
+              En lo que necesites podemos asesorarte para que elijas la mejor
+              opción sobre tu vehículo y puedas quedarte con esa tranquilidad
+              disfrutando del mismo!
+            </p>
+            <div class="d-flex flex-wrap flex-column flex-md-row justify-content-evenly">
+                <div class="d-flex">
+                  <i class="bi bi-whatsapp"></i>
+                  <p class="ms-1">3816173184</p>
+                </div>
+                <div class="d-flex">
+                    <i class="bi bi-envelope-at"></i>
+                  <p class="ms-1">ezequiel.monachesi@gmail.com</p>
+                </div>
+            </div>
+            <h3 class="fw-semibold my-4 my-md-2 my-lg-4">Escríbenos</h3>
+            <form
+              action="https://formspree.io/f/xzbodran"
+              method="POST"
+              data-netlify="true"
+            >
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="nombre@ejemplo.com"
+                />
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="input"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Tu nombre"
+                />
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="phone"
+                  id="phone"
+                  placeholder="Teléfono"
+                />
+              </div>
+
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <button type="submit" class="btn btn-primary w-100 fs-5">
+                  Enviar Mensaje
+                </button>
+              </div>
+            </form>
+          </aside>
+        </article>
+      </section>
     </main>
     <footer class="bg-body-tertiary py-4">
-        <section class="container">
-            <p class="text-center">GMC Gestoría Monachesi Coronel | Gestoría del automotor Tucumán<br>&copy; Todos los derechos reservados 2023</p>
-            <p class="text-center">Creado por: <a href="https://www.linkedin.com/in/monachesi-cesar-ezequiel/" class="text-decoration-none">Monachesi César</a></p>
-        </section>
+      <section class="container">
+        <p class="text-center">
+          GMC Gestoría Monachesi Coronel | Gestoría del automotor Tucumán<br />&copy;
+          Todos los derechos reservados 2023
+        </p>
+        <p class="text-center">
+          Creado por:
+          <a
+            href="https://www.linkedin.com/in/monachesi-cesar-ezequiel/"
+            class="text-decoration-none"
+            >Monachesi César</a
+          >
+        </p>
+      </section>
     </footer>
 
     <script
