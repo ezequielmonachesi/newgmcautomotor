@@ -61,4 +61,12 @@ h1, h2{
     color: white;
     background-attachment: fixed;
 }
+.fondoContactoBlanco{
+    background-image:linear-gradient(0deg,rgba(255, 255, 255, 0.815),rgb(255, 255, 255)), url(../img/contacto.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    background-attachment: fixed;
+}
 }

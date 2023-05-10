@@ -13,8 +13,12 @@ function cambiarTema(color) {
     if(color === "light"){ 
       document.getElementById('icon-toggle').classList.remove('bi-moon-stars-fill');
       document.getElementById('icon-toggle').classList.add('bi-brightness-high-fill');
+      document.querySelector('.imagenFondoCotacto').classList.add('fondoContactoBlanco');
+      document.querySelector('.imagenFondoCotacto').classList.remove('fondoContacto');
     }else{
       document.getElementById('icon-toggle').classList.remove('bi-brightness-high-fill');
       document.getElementById('icon-toggle').classList.add('bi-moon-stars-fill');
+      document.querySelector('.imagenFondoCotacto').classList.add('fondoContacto');
+      document.querySelector('.imagenFondoCotacto').classList.remove('fondoContactoBlanco');
     }
 }
