@@ -13,12 +13,10 @@ function cambiarTema(color) {
     if(color === "light"){ 
       document.getElementById('icon-toggle').classList.remove('bi-moon-stars-fill');
       document.getElementById('icon-toggle').classList.add('bi-brightness-high-fill');
-      document.querySelector('.imagenFondoCotacto').classList.add('fondoContactoBlanco');
-      document.querySelector('.imagenFondoCotacto').classList.remove('fondoContacto');
+      document.querySelector('.imagenFondoCotacto').className = "container py-5 my-0 my-md-5 rounded-2 imagenFondoCotacto fondoContactoBlanco shadow"
     }else{
       document.getElementById('icon-toggle').classList.remove('bi-brightness-high-fill');
       document.getElementById('icon-toggle').classList.add('bi-moon-stars-fill');
-      document.querySelector('.imagenFondoCotacto').classList.add('fondoContacto');
-      document.querySelector('.imagenFondoCotacto').classList.remove('fondoContactoBlanco');
+      document.querySelector('.imagenFondoCotacto').className = "container py-5 my-0 my-md-5 rounded-2 imagenFondoCotacto fondoContacto shadow"
     }
 }
