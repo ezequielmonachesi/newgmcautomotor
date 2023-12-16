@@ -1,0 +1,72 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    flex-grow: 1;
+    margin-top: 77px;
+}
+h1, h2{
+    font-family: 'Raleway', sans-serif;
+}
+#gmcLogo{
+    width: 60px;
+}
+
+.slidesCarrusel{
+    height: calc(100vh - 74px);
+    object-fit: cover;
+}
+.alturaImagenContacto{
+    height: 600px;
+}
+#beneficios{
+    background-image:linear-gradient(0deg,rgba(0,0,0,0.9),rgba(0,0,0,0.4)), url(../img/beneficio.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-attachment: fixed;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px){
+    .slidesCarrusel{
+    height: 300px;
+    object-fit: cover;
+}
+#gmcLogo{
+    width: 50px;
+}
+}
+@media all and (max-width: 767px){
+    
+#gmcLogo{
+    width: 50px;
+}
+    .slidesCarrusel{
+    height: 300px;
+    object-fit: cover;
+}
+.fondoContacto{
+    background-image:linear-gradient(0deg,rgba(0,0,0,0.9),rgba(0,0,0,0.4)), url(../img/contacto.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-attachment: fixed;
+}
+.fondoContactoBlanco{
+    background-image:linear-gradient(0deg,rgba(255, 255, 255, 0.815),rgb(255, 255, 255)), url(../img/contacto.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    background-attachment: fixed;
+}
+}
